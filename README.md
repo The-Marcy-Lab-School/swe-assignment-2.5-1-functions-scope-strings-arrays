@@ -7,7 +7,7 @@
 - [Short Response Questions](#short-response-questions)
 - [Coding Problems](#coding-problems)
   - [greetWithExcitement](#greetwithexcitement)
-- [calculateDiscount](#calculatediscount)
+  - [calculateDiscount](#calculatediscount)
 
 ## Reminders
 
@@ -75,6 +75,6 @@ console.log(addExcitement("Alex")); // Should print: "Alex!!"
 console.log(greetWithExcitement("Alex")); // Should print: "Hello, Alex!!"
 ```
 
-## calculateDiscount
+### calculateDiscount
 
 In the `debug.js` file, the function `calculateDiscount` is not working properly. Identify the bug and fix it. Then, in a comment, explain what the bug was using scope terminology.
