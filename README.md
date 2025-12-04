@@ -12,6 +12,7 @@
   - [4 - uniqueNames](#4---uniquenames)
   - [5 - findMissingStudent](#5---findmissingstudent)
   - [6 - extractHashtags](#6---extracthashtags)
+  - [7 - findAndRemove](#7---findandremove)
 
 ## Reminders
 
@@ -184,3 +185,7 @@ console.log(extractHashtags("No hashtags here"));
 console.log(extractHashtags("#First word #last-word and #middle123 word"));
 // ["#First", "#last-word", "#middle123"]
 ```
+
+### 7 - findAndRemove
+
+In the file `7-find-remove.js` the function `findAndRemove` is not working properly. Explain what is happening, identify the bug, and then implement a fix.
