@@ -15,4 +15,4 @@ const calculateDiscount = (price) => {
   return price - discount;
 }
 
-console.log(calculateDiscount(150)); // This should print 1354
+console.log(calculateDiscount(150)); // This should print 135

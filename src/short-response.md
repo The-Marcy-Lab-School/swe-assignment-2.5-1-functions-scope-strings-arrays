@@ -88,7 +88,7 @@ Global Scope:
 - buildProfile = ?
 - createFullName = ?
 - extractInitials = ?
-- getInitials = ?
+- getFirstLetter = ?
 - userProfile = ?
 
 buildProfile() scope:
@@ -108,7 +108,7 @@ extractInitials() scope:
 - firstInitial = ?
 - lastInitial = ?
 
-getInitials() scope:
+getFirstLetter() scope:
 - name = ?
 ```
 

@@ -9,7 +9,7 @@
   - [1 - greetWithExcitement](#1---greetwithexcitement)
   - [2 - calculateDiscount](#2---calculatediscount)
   - [3 - maskEmail](#3---maskemail)
-  - [4 - uniqueValues](#4---uniquevalues)
+  - [4 - uniqueNames](#4---uniquenames)
   - [5 - findMissingStudent](#5---findmissingstudent)
   - [6 - extractHashtags](#6---extracthashtags)
 
@@ -117,7 +117,7 @@ console.log(maskEmail("j@example.com"));
 // "j@example.com" (too short to mask)
 ```
 
-### 4 - uniqueValues
+### 4 - uniqueNames
 
 In the `4-unique-names.js` file, write a function `uniqueNames(names)` that takes in an array of names and returns a copy of the given array with duplicate names removed. Treat different uppercase/lowercase versions of names as the same name.
 
