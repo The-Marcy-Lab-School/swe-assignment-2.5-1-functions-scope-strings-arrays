@@ -1,11 +1,11 @@
 # Short Responses
 
 For this short response assignment, aim to write a response with the following qualities (your instructor will give you feedback on these areas):
-- [] Addresses all parts of the prompt
-- [] Accurately uses relevant technical terminology
-- [] Is free of grammar and spelling mistakes (double check with grammarly!)
-- [] Uses markdown to enhance readability (preview in VS Code with Command/Control + Shift + V)
-- [] Is easy to comprehend
+- [ ] Addresses all parts of the prompt
+- [ ] Accurately uses relevant technical terminology
+- [ ] Is free of grammar and spelling mistakes (double check with grammarly!)
+- [ ] Uses markdown to enhance readability (preview in VS Code with Command/Control + Shift + V)
+- [ ] Is easy to comprehend
 
 For each prompt below, write your response in the space provided. Aim to answer each prompt in 2-5 concise sentences. Make sure to preview your markdown to check how it is rendered before submitting.
 
