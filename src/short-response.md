@@ -11,7 +11,7 @@ For each prompt below, write your response in the space provided. Aim to answer 
 
 ## Prompt 1
 
-Using the code block below, explain what it means for a function call to be an "expression that resolves to a value."
+Using the code block below, explain what it means for a function call to be an "expression that resolves/evaluates to a value."
 
 ```js
 const double = (num) => {
@@ -21,18 +21,20 @@ const double = (num) => {
 const result = double(5);
 ```
 
-In your response, make sure to:
-1. Explain what an "expression" is
-2. Explain how it is determined what value a function call will resolve to
-3. Why sometimes function calls resolve to `undefined`.
+In your response, make sure to cover the following details:
+1. Explain what an "expression" is.
+2. Explain how it is determined what value a function call will resolve/evaluate to.
+3. Explain why function calls sometimes resolve/evaluate to `undefined`.
 
-## Response 1
+### Response 1
+
+Your response...
 
 ---
 
 ## Prompt 2
 
-Analyze the following code. Draw the callstack and list all variables at the moment when the `getFirstLetter()` function has just been called *for the first time* but has NOT yet returned.
+Analyze the following code. Then, fill in the template below with the callstack and the values of all variables at the moment when the `getFirstLetter()` function has just been called *for the first time* but has NOT yet returned.
 
 ```js
 const buildProfile = (firstName, lastName, age) => {
@@ -64,17 +66,15 @@ console.log(userProfile); // reuben ogbonna (RO) - Age: 24
 
 **Your response should include:**
 
-1. A diagram of the callstack showing all functions currently executing (in order from bottom to top)
+1. A diagram of the callstack showing all functions currently executing (most recent calls at the top)
 2. All variables in each scope with their current values
-   1. Use `undefined` for variables not yet defined
-   2. Use `waiting` for variables waiting to receive a value from a function call
+   - Use `waiting` for variables waiting to receive a value from a function call
+   - Use `undefined` for variables not yet assigned a value
 
-A template has been provided for you to fill in!
-
-## Response 2
+### Response 2
 
 ```
-Callstack: (top to bottom)
+Callstack: (recent calls at the top)
 ---------------------------
 [           ]
 [           ]
@@ -116,7 +116,7 @@ getInitials() scope:
 
 ## Prompt 3
 
-These two code snippets look similar but behave differently. Explain what each one prints and WHY they produce different results. Use scope terminology in your explanation.
+These two code snippets look similar but behave differently. Explain what each one prints and WHY they produce different results. Use the proper scope terminology in your explanation. Feel free to run these code blocks.
 
 Example A:
 
@@ -125,33 +125,67 @@ let count = 0;
 
 const incrementA = () => {
   count = count + 1;
-  console.log(count);
 }
 
 incrementA();
 console.log(count);
 ```
 
-Example B:
+Example B
 
 ```js
 let count = 0;
 
 const incrementB = () => {
-  let count = count + 1;
-  console.log(count);
+  let count = 0;
+  count = count + 1;
 }
 
 incrementB();
 console.log(count);
 ```
 
-## Response 3
+### Response 3
+
+Your response...
 
 ---
 
 ## Prompt 4
 
-Explain the concept of "variable shadowing". Use an example to demonstrate this concept.
+You need to remove a student's name from an array of enrolled students. Your coworker suggests two approaches:
 
-## Response 4
+```js
+// Approach A:
+const index = students.indexOf(nameToRemove);
+students.splice(index, 1);
+
+// Approach B:
+const newStudents = [];
+for (let i = 0; i < students.length; i++) {
+  if (students[i] !== nameToRemove) {
+    newStudents.push(students[i]);
+  }
+}
+```
+
+Which approach would you choose and why? In your answer, identify at least one potential bug and explain the tradeoff between these approaches.
+
+### Response 4
+
+Your response...
+
+---
+
+## Prompt 5
+
+Label the basic array methods below with a 1-sentence description of what they do. Indicate with `(mutating)` or `(non-mutating)` whether or not the method directly mutates the array
+
+### Response 5
+
+- `push(value)` - ???
+- `pop()` - ???
+- `shift()` - ???
+- `unshift(value)` - ???
+- `splice(index, deleteCount)` - ???
+- `slice(start, end)` - ???

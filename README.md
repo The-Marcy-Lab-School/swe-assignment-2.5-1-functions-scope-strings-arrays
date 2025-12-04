@@ -6,8 +6,12 @@
 - [Setup](#setup)
 - [Short Response Questions](#short-response-questions)
 - [Coding Problems](#coding-problems)
-  - [greetWithExcitement](#greetwithexcitement)
-  - [calculateDiscount](#calculatediscount)
+  - [1 - greetWithExcitement](#1---greetwithexcitement)
+  - [2 - calculateDiscount](#2---calculatediscount)
+  - [3 - maskEmail](#3---maskemail)
+  - [4 - uniqueValues](#4---uniquevalues)
+  - [5 - findMissingStudent](#5---findmissingstudent)
+  - [6 - extractHashtags](#6---extracthashtags)
 
 ## Reminders
 
@@ -59,9 +63,19 @@ Short response questions can be found in the `src/short-response.md` file. Write
 
 There are NO tests for these coding problems. Solve these problems to the best of your ability and use the provided example usage code to test your work.
 
-### greetWithExcitement
+These problems will test your knowledge of functions and scope as well as array and string manipulation including:
+- `indexOf()`
+- `includes()`
+- `split()`
+- `join()`
+- `toUpperCase()`
+- `toLowerCase()`
+- `trim()`
+- Bracket notation
 
-In the `from-scratch.js` file, first write two functions:
+### 1 - greetWithExcitement
+
+In the `1-greet-with-excitement.js` file, first write two functions:
 
 - `createGreeting(name)` - returns a greeting string like `"Hello, [name]"`
 - `addExcitement(message)` - takes a message and returns it with `"!!"` added to the end
@@ -75,6 +89,98 @@ console.log(addExcitement("Alex")); // Should print: "Alex!!"
 console.log(greetWithExcitement("Alex")); // Should print: "Hello, Alex!!"
 ```
 
-### calculateDiscount
+### 2 - calculateDiscount
 
-In the `debug.js` file, the function `calculateDiscount` is not working properly. Identify the bug and fix it. Then, in a comment, explain what the bug was using scope terminology.
+In the `2-calculate-discount.js` file, the function `calculateDiscount` is not working properly. Identify the bug and fix it. Then, in a comment, explain what the bug was using scope terminology.
+
+### 3 - maskEmail
+
+In the `3-mask-email.js` file, write a function `maskEmail(email)` that "masks" (hides) part of an email address for privacy.
+
+Requirements:
+- Show only first character before `@`
+- Replace remaining characters before `@` with `***`
+- Keep everything after `@` unchanged
+- If there are 2 or fewer characters before `@`, don't do anything
+- Remove excess whitespace (trim it)
+- Return the masked email
+
+Example Usage:
+```js
+console.log(maskEmail("maya.rodriguez@example.com"));
+// "m***@example.com"
+
+console.log(maskEmail("  abc@example.com"));
+// "a***@example.com"
+
+console.log(maskEmail("j@example.com"));
+// "j@example.com" (too short to mask)
+```
+
+### 4 - uniqueValues
+
+In the `4-unique-names.js` file, write a function `uniqueNames(names)` that takes in an array of names and returns a copy of the given array with duplicate names removed. Treat different uppercase/lowercase versions of names as the same name.
+
+Requirements:
+
+- Keep the first occurrence (with its original capitalization)
+- Remove subsequent duplicates regardless of case
+- Maintain original order
+- Return a new array (don't mutate original)
+
+Example Usage:
+```js
+console.log(uniqueNames(["Maya", "Carlos", "maya", "sarah", "CARLOS"]));
+// ["Maya", "Carlos", "sarah"]
+
+console.log(uniqueNames(["ALEX", "Alex", "alex", "AlEx"]));
+// ["ALEX"]
+```
+
+### 5 - findMissingStudent
+
+In the `5-find-missing-student.js` file, write a function called `findMissingStudent(yesterday, today)` that takes in two arrays of strings representing yesterday's attendance and today's. 
+
+Return the name of the student who is missing today.
+
+Requirements:
+- Return the name of the missing student
+- Return an empty string if no one is missing
+- Arrays might be in different orders
+- Assume that there will either be one student missing, or none
+
+Example Usage:
+```js
+console.log(findMissingStudent(
+  ["Maya", "Reuben", "Sarah", "James"],
+  ["Maya", "Sarah", "James"]
+));
+// "Reuben"
+
+console.log(findMissingStudent(
+  ["Alex", "Jordan"],
+  ["Jordan", "Alex"]
+));
+// "" (no one missing)
+```
+
+### 6 - extractHashtags
+
+In the file `6-extract-hashtags.js`, write a function `extractHashtags(post)` that extracts all hashtags from a social media post.
+
+Requirements:
+
+- Find all words starting with `#`
+- Return empty array if none found
+
+Example Usage:
+```js
+console.log(extractHashtags("Love this #coding bootcamp! #javascript #WebDev"));
+// ["#coding", "#javascript", "#WebDev"]
+
+console.log(extractHashtags("No hashtags here"));
+// []
+
+console.log(extractHashtags("#First word #last-word and #middle123 word"));
+// ["#First", "#last-word", "#middle123"]
+```
